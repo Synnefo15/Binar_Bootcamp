@@ -4,8 +4,22 @@ body {
 }
 .gallery {
 	padding: 80px;
-	background-color: skyblue;
+	background-color: #b3d9ff;
 	/* margin-top: 10px; */
+}
+
+.navbar-brand {
+	font-size: 30px;
+	transition: all 0.35s ease-in;
+}
+
+.navbar-brand:hover {
+	transform: translateY(10px);
+	font-size: 35px;
+}
+
+.nav-item {
+	font-size: 20px;
 }
 
 .gallery img {
@@ -31,4 +45,33 @@ body {
 .card-effect:hover {
 	box-shadow: none;
 	transform: translateY(20px);
+}
+
+
+
+footer {
+	font-size: 15px;
+	margin: 10px 0;
+    background-color: #e6e6e6;
+    padding: 10px 0;
+
+}
+
+footer a {
+	text-decoration: none;
+	color: black;
+}
+
+footer i {
+	font-size: 15px;
+	padding: 5px;
+	color: darkblue;
+}
+
+.judul-sec {
+	transition: all 0.5s ease-out;
+}
+
+.judul-sec:hover {
+	transform: translateX(20px);
 }
