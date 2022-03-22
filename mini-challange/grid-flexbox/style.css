@@ -1,0 +1,34 @@
+body {
+	/* background-color: skyblue; */
+	/* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+}
+.gallery {
+	padding: 80px;
+	background-color: skyblue;
+	/* margin-top: 10px; */
+}
+
+.gallery img {
+	max-width: 100%;
+	width: 500px;
+	height: 200px;
+	padding: 5px;
+	/* background-color: aquamarine; */
+	border-radius: 20px;
+	/* box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); */
+	cursor: pointer;
+}
+
+#gallery-popup .modal-img {
+	width: 100%;
+}
+
+.card-effect {
+	box-shadow: 0 8px 22px rgba(0, 0, 0, 0.1);
+	transition: all 0.35s ease-in;
+}
+
+.card-effect:hover {
+	box-shadow: none;
+	transform: translateY(20px);
+}

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Mini Challange Grid-Flexbox</title>
+		<link rel="stylesheet" href="style.css" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous"
+		/>
+		<!-- * Font Awesome -->
+		<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.0.0/css/all.css" />
+	</head>
+	<body>
+		<!-- *Navbar -->
+		<nav class="navbar navbar-expand-lg navbar-light py-3 sticky-top">
+			<div class="container">
+				<a class="navbar-brand ms-5" href="#home">
+					<p style="color: #091b6f"><i class="fas fa-bat"></i>Vurba Kew</p>
+				</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarNav"
+					aria-controls="navbarNav"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<!-- *navbar link -->
+				<div
+					class="collapse navbar-collapse justify-content-end align-content-center"
+					id="navbarNav"
+				>
+					<ul class="navbar-nav ms-lg-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="#koleksi">Our Koleksi</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#why">Kenapa kami</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#testi">Ulasan</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#faq">FAQ</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- # Nav end -->
+
+		<!-- * Content -->
+		<section class="m-1 gallery min-vh-100" id="koleksi">
+			<div class="container-lg">
+				<div class="row g-5 row-cols-1 row-cols-sm-2 row-cols-md-3">
+					<div class="col card-effect">
+						<img src="img/e1.jpg" alt="1" srcset="" class="gallery-item" />
+					</div>
+					<div class="col card-effect">
+						<img src="img/e2.webp" alt="1" srcset="" class="gallery-item" />
+					</div>
+					<div class="col card-effect">
+						<img src="img/e3.webp" alt="1" srcset="" class="gallery-item" />
+					</div>
+					<div class="col card-effect">
+						<img src="img/e4.webp" alt="1" srcset="" class="gallery-item" />
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- # Content End -->
+		<!-- * Modal -->
+		<!-- Button trigger modal -->
+		<!-- <button
+			type="button"
+			class="btn btn-primary"
+			data-bs-toggle="modal"
+			data-bs-target="#gallery-popup"
+		>
+			Launch demo modal
+		</button> -->
+
+		<!-- Modal -->
+		<div
+			class="modal fade"
+			id="gallery-popup"
+			tabindex="-1"
+			aria-labelledby="exampleModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-dialog-centered modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="modal"
+							aria-label="Close"
+						></button>
+					</div>
+					<div class="modal-body">
+						<img src="img/e1.jpg" alt="img1" class="modal-img" />
+					</div>
+					<!-- <div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Save changes</button>
+					</div> -->
+				</div>
+			</div>
+		</div>
+		<!-- *FOOTER -->
+		<footer>
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-3 f-alamat">
+						<p>Probolinggo Wonoasih</p>
+						<p>xxxxxxxxxx</p>
+					</div>
+
+					<div class="col-lg-3">
+						<p>Jangkau Kami</p>
+						<div>
+							<i class="fa-brands fa-facebook"></i>
+							<i class="fa-brands fa-instagram"></i>
+							<i class="fa-brands fa-twitter"></i>
+							<i class="fa-solid fa-circle-envelope"></i>
+							<i class="fa-solid fa-comment-lines"></i>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<p>Oleh Muhammad Rafi Cahyaputra 2022</p>
+						<a href="#home"><i class="fas fa-bat">Vurba Kew</i></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- #END FOOTER -->
+		<script type="text/javascript">
+			document.addEventListener("click", function (e) {
+				if (e.target.classList.contains("gallery-item")) {
+					const scr = e.target.getAttribute("scr");
+					document.querySelector(".modal-img").src = scr;
+					const myModal = new bootstrap.Modal(document.getElementById("gallery-popup"));
+					myModal.show();
+				}
+			});
+		</script>
+		<!-- *JS bootstrap-->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
