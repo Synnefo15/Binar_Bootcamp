@@ -1,10 +1,10 @@
-body {
+.body {
 	/* background-color: skyblue; */
-	/* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .gallery {
 	padding: 80px;
-	background-color: #b3d9ff;
+	background-color: #e6e6e6;
 	/* margin-top: 10px; */
 }
 
@@ -24,6 +24,7 @@ body {
 
 .gallery img {
 	max-width: 100%;
+    /* min-width: 50%; */
 	width: 500px;
 	height: 200px;
 	padding: 5px;
