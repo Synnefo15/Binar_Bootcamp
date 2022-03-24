@@ -409,4 +409,7 @@ footer .fa-car {
 	footer i{
 		font-size: 35px;
 	}
+	.card{
+		width: 80%;
+	}
 }
