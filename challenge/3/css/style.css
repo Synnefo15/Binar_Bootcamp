@@ -403,4 +403,10 @@ footer .fa-car {
 	.carousel-inner .pendapat{
 		width: 100%;
 	}
+	footer{
+		font-size: 15px;
+	}
+	footer i{
+		font-size: 35px;
+	}
 }
