@@ -11,6 +11,10 @@ section {
 	text-justify: inter-word;
 }
 
+nav,
+#home {
+	background-color: #f1f3ff;
+}
 
 .navbar-brand {
 	font-size: 30px;
@@ -33,8 +37,8 @@ section {
 #main-car {
 	width: 120%;
 	height: 100%;
-	position: relative;
 	top: 80px;
+	position: relative;
 }
 
 #main-car:hover {
@@ -92,13 +96,11 @@ section {
 	background-color: darkblue;
 	width: 450px;
 	height: 110px;
-	border-radius: 50px 50px 0 0;
 	position: absolute;
+	border-radius: 50px 50px 0 0;
 	left: 10px;
 	top: 194px;
 }
-
-
 
 #girl {
 	width: 65%;
@@ -273,12 +275,10 @@ li {
 	width: 320px;
 	font-size: 14px;
 	height: 40px;
-	
 }
 
 .carousel-inner i {
 	font-size: 15px;
-	
 }
 
 .getting-col {
@@ -350,5 +350,57 @@ footer .fa-car {
 
 	to {
 		background-color: green;
+	}
+}
+
+@media (max-width: 426px) {
+	nav {
+		/* background-color: #2b4eee; */
+		margin: 0;
+	}
+	body {
+		/* background-color: palevioletred; */
+	}
+	#main-car {
+		width: 75%;
+		height: 75%;
+		top: 0px;
+	}
+	#latar-mobil {
+		width: 310px;
+		height: 70px;
+		border-radius: 20px 20px 0 0;
+		left: auto;
+		top: 100px;
+	}
+	.mob-lat {
+		display: flex;
+		justify-content: center;
+	}
+	.tengah {
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+	}
+	#testi {
+		/* background-color: palegoldenrod; */
+	}
+	.carousel-inner .container {
+		border-radius: 70px;
+		width: 100%;
+		height: 320px;
+		position: relative;
+	}
+	.carousel-inner img{
+		left: 130px;
+		top: 10px;
+	}
+	.bintang{
+		display: flex;
+		justify-content: center;
+	}
+
+	.carousel-inner .pendapat{
+		width: 100%;
 	}
 }
