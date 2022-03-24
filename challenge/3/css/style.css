@@ -238,7 +238,7 @@ li {
 	padding: 20px;
 	border-radius: 20px;
 	border: 2px solid grey;
-	width: 220px;
+	width: 80%;
 	height: 280px;
 }
 
@@ -353,63 +353,182 @@ footer .fa-car {
 	}
 }
 
-@media (max-width: 426px) {
-	nav {
-		/* background-color: #2b4eee; */
-		margin: 0;
-	}
+@media (max-width: 769px) {
 	body {
-		/* background-color: palevioletred; */
+		/* background-color: purple; */
 	}
+
 	#main-car {
-		width: 75%;
-		height: 75%;
+		width: 95%;
+		height: 85%;
 		top: 0px;
 	}
+
 	#latar-mobil {
-		width: 310px;
-		height: 70px;
+		width: 710px;
+		height: 170px;
 		border-radius: 20px 20px 0 0;
 		left: auto;
-		top: 100px;
+		top: 200px;
 	}
-	.mob-lat {
-		display: flex;
-		justify-content: center;
-	}
+
 	.tengah {
 		display: flex;
 		justify-content: center;
 		flex-direction: row;
 	}
-	#testi {
-		/* background-color: palegoldenrod; */
+
+	.poin {
+		font-size: 17px;
 	}
+
+	.carousel-inner .container {
+		border-radius: 70px;
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
+
+	.carousel-inner img {
+		left: 43%;
+		top: 5%;
+	}
+
+	.bintang {
+		display: flex;
+		justify-content: center;
+	}
+
+	.carousel-inner .pendapat {
+		width: 100%;
+	}
+
+	footer {
+		font-size: 15px;
+	}
+
+	footer i {
+		font-size: 35px;
+	}
+
+	.p-box #bunder1 {
+		position: absolute;
+		top: 80px;
+		left: 30px;
+		width: 100px;
+		height: 100px;
+	}
+
+	.p-box #bunder2 {
+		position: absolute;
+		bottom: 30px;
+		left: 190px;
+		width: 330px;
+		height: 330px;
+	}
+
+	.p-box #bunder3 {
+		position: absolute;
+		bottom: 30px;
+		top: 20px;
+		left: 380px;
+		width: 60px;
+		height: 60px;
+	}
+
+	.p-box #bunder4 {
+		position: absolute;
+		bottom: 30px;
+		top: 350px;
+		left: 100px;
+		width: 50px;
+		height: 50px;
+	}
+}
+
+/* *===== Media Mobile =======*/
+@media (max-width: 426px) {
+	body {
+		/* background-color: red; */
+	}
+
+	nav {
+		margin: 0;
+	}
+
+	#main-car {
+		width: 95%;
+		height: 85%;
+		top: 0px;
+	}
+
+	#latar-mobil {
+		width: 410px;
+		height: 70px;
+		border-radius: 20px 20px 0 0;
+		left: auto;
+		top: 100px;
+	}
+
+	.mob-lat {
+		display: flex;
+		justify-content: center;
+	}
+
+	/* .tengah {
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+	} */
+
 	.carousel-inner .container {
 		border-radius: 70px;
 		width: 100%;
 		height: 320px;
 		position: relative;
 	}
-	.carousel-inner img{
+
+	.carousel-inner img {
 		left: 130px;
 		top: 10px;
 	}
-	.bintang{
-		display: flex;
-		justify-content: center;
+
+	#getting {
+		margin: 0 20px;
+		margin-top: 50px;
 	}
 
-	.carousel-inner .pendapat{
-		width: 100%;
+	.p-box #bunder1 {
+		position: absolute;
+		top: 60px;
+		left: 30px;
+		width: 70px;
+		height: 70px;
 	}
-	footer{
-		font-size: 15px;
+
+	.p-box #bunder2 {
+		position: absolute;
+		bottom: 20px;
+		left: 109px;
+		width: 170px;
+		height: 170px;
 	}
-	footer i{
-		font-size: 35px;
+
+	.p-box #bunder3 {
+		position: absolute;
+		bottom: 30px;
+		top: 10px;
+		left: 280px;
+		width: 40px;
+		height: 40px;
 	}
-	.card{
-		width: 80%;
+
+	.p-box #bunder4 {
+		position: absolute;
+		bottom: 30px;
+		top: 245px;
+		left: 95px;
+		width: 20px;
+		height: 25px;
 	}
 }

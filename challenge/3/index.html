@@ -24,14 +24,50 @@
 		<nav class="navbar navbar-expand-lg navbar-light py-3 sticky-top">
 			<div class="container">
 				<a class="navbar-brand ms-5" href="#home">
-					<i class="fa-solid fa-car" style="color: #091b6f">Binar Car</i>
+					<i class="fa-solid fa-car" style="color: #091b6f"></i> Binar Car
 				</a>
+				<!-- *===== Offcanvas ======= -->
+
+				<div
+					class="offcanvas offcanvas-end"
+					tabindex="-1"
+					id="offcanvasRight"
+					aria-labelledby="offcanvasRightLabel"
+				>
+					<div class="offcanvas-header">
+						<h5 id="offcanvasRightLabel">Binar Car</h5>
+						<button
+							type="button"
+							class="btn-close text-reset"
+							data-bs-dismiss="offcanvas"
+							aria-label="Close"
+						></button>
+					</div>
+					<div class="offcanvas-body">
+						<ul class="navbar-nav ms-lg-auto">
+							<li class="nav-item">
+								<a class="nav-link" href="#service">Our Service</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#why">Why Us</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#testi">Testimonial</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#faq">FAQ</a>
+							</li>
+						</ul>
+						<button class="btn ms-4 tombol">REGISTER</button>
+					</div>
+				</div>
+				<!-- *===== end offcanvas======= -->
 				<button
 					class="navbar-toggler"
 					type="button"
-					data-bs-toggle="collapse"
-					data-bs-target="#navbarNav"
-					aria-controls="navbarNav"
+					data-bs-toggle="offcanvas"
+					data-bs-target="#offcanvasRight"
+					aria-controls="offcanvasRight"
 					aria-expanded="false"
 					aria-label="Toggle navigation"
 				>
@@ -63,7 +99,7 @@
 		<!-- # Nav end -->
 
 		<!-- * MAIN SECTION -->
-		<section class="mt-0 mb-0" id="home" >
+		<section class="mt-0 mb-0" id="home">
 			<div class="container">
 				<div class="row justify-content-center align-items-center">
 					<div class="col-lg-5 py-5">
@@ -91,10 +127,12 @@
 				<div class="row align-items-center justify-content-center g-1 py-5">
 					<div class="col-lg-5">
 						<div class="text-center p-box">
-							<div class="btn" id="bunder4"></div>
-							<div class="btn" id="bunder3"></div>
-							<div class="btn" id="bunder1"></div>
-							<div class="btn" id="bunder2"></div>
+							<div class="bunder">
+								<div class="btn" id="bunder4"></div>
+								<div class="btn" id="bunder3"></div>
+								<div class="btn" id="bunder1"></div>
+								<div class="btn" id="bunder2"></div>
+							</div>
 							<img class="img-fluid" id="girl" src="img/Happy Girl - 961x1443 2.png" alt="girl" />
 						</div>
 					</div>
@@ -110,26 +148,32 @@
 							</p>
 							<ul class="list-unstyled mb-4 service-li">
 								<li>
-									<p>
-										<i class="fa-solid fa-circle-check"></i> sewa mobil dengan supir di bali 12 jam
+									<p class="poin">
+										<i class="fa-solid fa-circle-check pe-1"></i> sewa mobil dengan supir di bali 12
+										jam
 									</p>
 								</li>
 								<li>
-									<p>
-										<i class="fa-solid fa-circle-check"> </i> sewa mobil lepas kunci di bali 24 jam
+									<p class="poin">
+										<i class="fa-solid fa-circle-check pe-1"> </i> sewa mobil lepas kunci di bali 24
+										jam
 									</p>
 								</li>
 								<li>
-									<p><i class="fa-solid fa-circle-check"> </i> sewa mobil jangka panjang bulanan</p>
-								</li>
-								<li>
-									<p>
-										<i class="fa-solid fa-circle-check"> </i> gratis antar jemput mobil di bandara
+									<p class="poin">
+										<i class="fa-solid fa-circle-check pe-1"> </i> sewa mobil jangka panjang bulanan
 									</p>
 								</li>
 								<li>
-									<p>
-										<i class="fa-solid fa-circle-check"> </i> layanan airport transfer/drop in out
+									<p class="poin">
+										<i class="fa-solid fa-circle-check pe-1"> </i> gratis antar jemput mobil di
+										bandara
+									</p>
+								</li>
+								<li>
+									<p class="poin">
+										<i class="fa-solid fa-circle-check pe-1"> </i> layanan airport transfer/drop in
+										out
 									</p>
 								</li>
 							</ul>
@@ -143,7 +187,7 @@
 		<!-- * WHY US SECTION -->
 		<section id="why" class="">
 			<div class="container my-3">
-				<div class="row ">
+				<div class="row">
 					<div class="">
 						<h3 class="judul-sec tengah">Why Us?</h3>
 						<p class="tengah">Mengapa harus pilih Binar Car</p>
@@ -244,14 +288,14 @@
 												<img src="img/team1.jpg" class="d-block" alt="..." />
 											</div>
 											<div class="col-lg-8">
-												<div >
+												<div>
 													<div class="bintang">
 														<i class="fa-solid fa-star-sharp"></i>
 														<i class="fa-solid fa-star-sharp"></i>
 														<i class="fa-solid fa-star-sharp"></i>
 														<i class="fa-solid fa-star-sharp"></i>
 													</div>
-													<div class="pendapat ">
+													<div class="pendapat">
 														<p class="tengah">
 															Lorem ipsum, dolor sit amet consectetur adipisicing elit.
 															Exercitationem quae vitae atque voluptate inventore sint!
@@ -281,7 +325,6 @@
 														<p class="tengah">
 															Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat
 															ullam laudantium nesciunt repellendus incidunt hic voluptatibus
-															quisquam. Explicabo, magnam quidem!
 														</p>
 														<h5>Bagus Kuncoro</h5>
 													</div>
@@ -569,7 +612,7 @@
 					</div>
 					<div class="col-lg-3">
 						<p>Oleh Muhammad Rafi Cahyaputra 2022</p>
-						<a href="#home"><i class="fa-solid fa-car">Binar CAR</i></a>
+						<a href="#home"><i class="fa-solid fa-car"></i> Binar CAR</a>
 					</div>
 				</div>
 			</div>
