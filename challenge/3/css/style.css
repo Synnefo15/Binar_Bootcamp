@@ -353,7 +353,7 @@ footer .fa-car {
 	}
 }
 
-@media (max-width: 769px) {
+@media screen and (max-width: 769px) {
 	body {
 		/* background-color: purple; */
 	}
@@ -447,10 +447,8 @@ footer .fa-car {
 }
 
 /* *===== Media Mobile =======*/
-@media (max-width: 426px) {
-	body {
-		/* background-color: red; */
-	}
+@media screen and (max-width: 426px) {
+	
 
 	nav {
 		margin: 0;
@@ -475,11 +473,7 @@ footer .fa-car {
 		justify-content: center;
 	}
 
-	/* .tengah {
-		display: flex;
-		justify-content: center;
-		flex-direction: row;
-	} */
+	
 
 	.carousel-inner .container {
 		border-radius: 70px;
