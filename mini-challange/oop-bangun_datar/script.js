@@ -48,21 +48,22 @@ class PersegiPanjang extends BangunDatar {
 }
 
 class Segitiga extends BangunDatar {
-	constructor(alas, tinggi, miring) {
+	constructor(alas, tinggi, miring,jenis) {
 		super();
 		this.alas = alas;
 		this.tinggi = tinggi;
 		this.miring = miring;
+        this.jenis = jenis
 	}
 	luas() {
 		const Luas = (1 / 2) * this.alas * this.tinggi;
 		console.log(`Luas Segitiga = ${Luas} `);
 	}
-	keliling(jenis) {
+	keliling() {
         let keliling = null
-		switch (jenis) {
+		switch (this.jenis) {
 			case 'sama_kaki':
-				keliling = this.alas + this.miring * 2; // % segi3 samakaki
+				keliling = this.alas + this.miring * 2; 
 				console.log(`Keliling Segitiga sama kaki = ${keliling}`);
 				break;
             case 'sama_sisi':
@@ -80,6 +81,9 @@ class Segitiga extends BangunDatar {
 	}
 }
 
+// const parent = new BangunDatar()
+// console.log(parent); // % pasti error 
+
 const persegi1 = new Persegi(5);
 console.log(persegi1);
 persegi1.luas();
@@ -90,9 +94,10 @@ console.log(persegiPanjang1);
 persegiPanjang1.luas();
 persegiPanjang1.keliling();
 
-const segitiga1 = new Segitiga(6, 4, 5);
+const segitiga1 = new Segitiga(6, 4, 5,'sama_sisi');
 console.log(segitiga1);
 segitiga1.luas();
-segitiga1.keliling('sama_kaki');
-segitiga1.keliling('sama_sisi')
-segitiga1.keliling('siku_siku')
+segitiga1.keliling();
+// segitiga1.keliling('sama_sisi');
+
+
