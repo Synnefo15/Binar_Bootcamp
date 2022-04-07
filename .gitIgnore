@@ -1,5 +1,8 @@
 # * Mini Challenge 
-mini-challange/grid-flexbox/img
+# mini-challange/grid-flexbox/img
 
 # * Challenge
-challenge/2/scripts/*.js
+# challenge/2/scripts/*.js
+
+# * Node Modules
+node_modules/

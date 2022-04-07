@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Challange Chapter 4</title>
+		<link rel="shortcut icon" href="images/car-alt-solid.svg" />
+		<!-- *BOOTSTRAP -->
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous"
+		/>
+		<!-- * CSS -->
+		<link rel="stylesheet" href="css/style.css" />
+		<!-- * Font Awesome -->
+		<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.0.0/css/all.css" />
+	</head>
+	<body>
+		<!-- *Navbar -->
+		<nav class="navbar navbar-expand-lg navbar-light py-3 sticky-top">
+			<div class="container">
+				<a class="navbar-brand ms-5" href="#home">
+					<i class="fa-solid fa-car" style="color: #091b6f"></i> Binar Car
+				</a>
+				<!-- *===== Offcanvas ======= -->
+
+				<div
+					class="offcanvas offcanvas-end"
+					tabindex="-1"
+					id="offcanvasRight"
+					aria-labelledby="offcanvasRightLabel"
+				>
+					<div class="offcanvas-header">
+						<h5 id="offcanvasRightLabel">Binar Car</h5>
+						<button
+							type="button"
+							class="btn-close text-reset"
+							data-bs-dismiss="offcanvas"
+							aria-label="Close"
+						></button>
+					</div>
+					<div class="offcanvas-body">
+						<ul class="navbar-nav ms-lg-auto">
+							<li class="nav-item">
+								<a class="nav-link" href="#service">Our Service</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#why">Why Us</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#testi">Testimonial</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#faq">FAQ</a>
+							</li>
+						</ul>
+						<button class="btn ms-4 tombol">REGISTER</button>
+					</div>
+				</div>
+				<!-- *===== end offcanvas======= -->
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="offcanvas"
+					data-bs-target="#offcanvasRight"
+					aria-controls="offcanvasRight"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<!-- *navbar link -->
+				<div
+					class="collapse navbar-collapse justify-content-end align-content-center"
+					id="navbarNav"
+				>
+					<ul class="navbar-nav ms-lg-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="#service">Our Service</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#why">Why Us</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#testi">Testimonial</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#faq">FAQ</a>
+						</li>
+					</ul>
+					<button class="btn ms-4 tombol">REGISTER</button>
+				</div>
+			</div>
+		</nav>
+		<!-- # Nav end -->
+
+		<!-- * MAIN SECTION -->
+		<section class="mt-0 mb-0" id="home">
+			<div class="container">
+				<div class="row justify-content-center align-items-center">
+					<div class="col-lg-5 py-5">
+						<h2 style="font-weight: 700" class="judul-sec">
+							<div>Sewa dan Rental Mobil Terbaik di Kawasan Probolinggo</div>
+						</h2>
+						<p class="my-3 rata-text">
+							Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan
+							harga terjangkau. Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam
+						</p>
+						<button class="btn ms-4 tombol">Mulai Sewa Mobil</button>
+					</div>
+					<div class="col-lg-5 p-box mob-lat">
+						<div id="latar-mobil" class="btn"></div>
+						<img id="main-car" src="images/car main.png" alt="mobil" />
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- # END MAIN SECTION -->
+
+		
+
+		<!-- *FOOTER -->
+		<footer>
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-3 f-alamat">
+						<p>Jalan Suroyo No.161 Mayangan Kota Probolinggo</p>
+						<p>binarcarrental@gmail.com</p>
+						<p>081-233-334-808</p>
+					</div>
+					<div class="col-lg-3 fw-bold">
+						<p><a href="#service">Our Service</a></p>
+						<p><a href="#why">WHY Us</a></p>
+						<p><a href="#testi">Testimonial</a></p>
+						<p><a href="#faq"> FAQ</a></p>
+					</div>
+					<div class="col-lg-3">
+						<p>Connect With Us</p>
+						<div>
+							<i class="fa-brands fa-facebook"></i>
+							<i class="fa-brands fa-instagram"></i>
+							<i class="fa-brands fa-twitter"></i>
+							<i class="fa-solid fa-circle-envelope"></i>
+							<i class="fa-solid fa-comment-lines"></i>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<p>Oleh Muhammad Rafi Cahyaputra 2022</p>
+						<a href="#home"><i class="fa-solid fa-car"></i> Binar CAR</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- #END FOOTER -->
+
+		<!-- *JS bootstrap-->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
