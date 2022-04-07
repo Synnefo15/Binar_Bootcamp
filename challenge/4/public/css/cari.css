@@ -1,0 +1,275 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+	margin-top: 50px;
+}
+
+.rata-text {
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+nav,
+#home {
+	background-color: #f1f3ff;
+}
+
+.navbar-brand {
+	font-size: 30px;
+	transition: all 0.35s ease-in;
+}
+
+.navbar-brand:hover {
+	transform: translateY(10px);
+	font-size: 35px;
+}
+
+.nav-item {
+	font-size: 20px;
+}
+
+
+#main-car {
+	width: 120%;
+	height: 100%;
+	top: 80px;
+	position: relative;
+}
+
+#main-car:hover {
+	animation: shake 0.5s;
+	animation-iteration-count: 1;
+}
+
+@keyframes shake {
+	0% {
+		transform: translate(1px, 1px) rotate(0deg);
+	}
+
+	10% {
+		transform: translate(-1px, -2px) rotate(-1deg);
+	}
+
+	20% {
+		transform: translate(-3px, 0px) rotate(1deg);
+	}
+
+	30% {
+		transform: translate(3px, 2px) rotate(0deg);
+	}
+
+	40% {
+		transform: translate(1px, -1px) rotate(1deg);
+	}
+
+	50% {
+		transform: translate(-1px, 2px) rotate(-1deg);
+	}
+
+	60% {
+		transform: translate(-3px, 1px) rotate(0deg);
+	}
+
+	70% {
+		transform: translate(3px, 1px) rotate(-1deg);
+	}
+
+	80% {
+		transform: translate(-1px, -1px) rotate(1deg);
+	}
+
+	90% {
+		transform: translate(1px, 2px) rotate(0deg);
+	}
+
+	100% {
+		transform: translate(1px, -2px) rotate(-1deg);
+	}
+}
+
+#latar-mobil {
+	background-color: darkblue;
+	width: 450px;
+	height: 110px;
+	position: absolute;
+	border-radius: 50px 50px 0 0;
+	left: 10px;
+	top: 194px;
+}
+
+
+
+.p-box {
+	position: relative;
+	margin: 0px;
+}
+
+
+.card-effect {
+	box-shadow: 0 8px 22px rgba(0, 0, 0, 0.1);
+	transition: all 0.35s ease-in;
+}
+
+.card-effect:hover {
+	box-shadow: none;
+	transform: translateY(20px);
+}
+
+
+
+li {
+	font-size: 14px;
+	font-weight: lighter;
+	color: black;
+	margin-bottom: 5px;
+}
+
+footer {
+	font-size: 10px;
+	margin: 50px 0;
+}
+
+footer a {
+	text-decoration: none;
+	color: black;
+}
+
+footer i {
+	font-size: 15px;
+	padding: 5px;
+	color: darkblue;
+}
+
+
+
+.f-alamat {
+	font-weight: lighter;
+}
+
+footer .fa-car {
+	font-size: 20px;
+}
+
+
+.judul-sec {
+	transition: all 0.5s ease-out;
+}
+
+.judul-sec:hover {
+	transform: translateX(20px);
+}
+
+.tombol {
+	animation-name: kelap-kelip;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	color: white;
+}
+
+/* &---- NEW CSS ---- */
+
+label{
+	font-size: .75rem;
+	width: 8rem;
+}
+
+
+i{
+	width: 2rem;
+}
+
+#penumpang{
+	width: 8rem;
+}
+
+.cari{
+	border: 1px solid black;
+	border-radius: 20px;
+	background-color: whitesmoke;
+}
+
+@keyframes kelap-kelip {
+	from {
+		background-color: yellowgreen;
+	}
+
+	to {
+		background-color: green;
+	}
+}
+
+@media screen and (max-width: 769px) {
+	body {
+		/* background-color: purple; */
+	}
+
+	#main-car {
+		width: 95%;
+		height: 85%;
+		top: 0px;
+	}
+
+	#latar-mobil {
+		width: 710px;
+		height: 170px;
+		border-radius: 20px 20px 0 0;
+		left: auto;
+		top: 200px;
+	}
+
+	.tengah {
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+	}
+
+	.poin {
+		font-size: 17px;
+	}
+
+	
+
+	footer {
+		font-size: 15px;
+	}
+
+	footer i {
+		font-size: 35px;
+	}
+
+	
+}
+
+/* *===== Media Mobile =======*/
+@media screen and (max-width: 426px) {
+	
+
+	nav {
+		margin: 0;
+	}
+
+	#main-car {
+		width: 95%;
+		height: 85%;
+		top: 0px;
+	}
+
+	#latar-mobil {
+		width: 410px;
+		height: 70px;
+		border-radius: 20px 20px 0 0;
+		left: auto;
+		top: 100px;
+	}
+
+	.mob-lat {
+		display: flex;
+		justify-content: center;
+	}
+
+	
+
+	
+}

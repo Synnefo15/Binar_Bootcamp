@@ -11,10 +11,6 @@ section {
 	text-justify: inter-word;
 }
 
-nav,
-#home {
-	background-color: #f1f3ff;
-}
 
 .navbar-brand {
 	font-size: 30px;
@@ -37,8 +33,8 @@ nav,
 #main-car {
 	width: 120%;
 	height: 100%;
-	top: 80px;
 	position: relative;
+	top: 80px;
 }
 
 #main-car:hover {
@@ -96,11 +92,13 @@ nav,
 	background-color: darkblue;
 	width: 450px;
 	height: 110px;
-	position: absolute;
 	border-radius: 50px 50px 0 0;
+	position: absolute;
 	left: 10px;
 	top: 194px;
 }
+
+
 
 #girl {
 	width: 65%;
@@ -238,7 +236,7 @@ li {
 	padding: 20px;
 	border-radius: 20px;
 	border: 2px solid grey;
-	width: 80%;
+	width: 220px;
 	height: 280px;
 }
 
@@ -275,10 +273,12 @@ li {
 	width: 320px;
 	font-size: 14px;
 	height: 40px;
+	
 }
 
 .carousel-inner i {
 	font-size: 15px;
+	
 }
 
 .getting-col {
@@ -350,179 +350,5 @@ footer .fa-car {
 
 	to {
 		background-color: green;
-	}
-}
-
-@media screen and (max-width: 769px) {
-	body {
-		/* background-color: purple; */
-	}
-
-	#main-car {
-		width: 95%;
-		height: 85%;
-		top: 0px;
-	}
-
-	#latar-mobil {
-		width: 710px;
-		height: 170px;
-		border-radius: 20px 20px 0 0;
-		left: auto;
-		top: 200px;
-	}
-
-	.tengah {
-		display: flex;
-		justify-content: center;
-		flex-direction: row;
-	}
-
-	.poin {
-		font-size: 17px;
-	}
-
-	.carousel-inner .container {
-		border-radius: 70px;
-		width: 100%;
-		height: 100%;
-		position: relative;
-	}
-
-	.carousel-inner img {
-		left: 43%;
-		top: 5%;
-	}
-
-	.bintang {
-		display: flex;
-		justify-content: center;
-	}
-
-	.carousel-inner .pendapat {
-		width: 100%;
-	}
-
-	footer {
-		font-size: 15px;
-	}
-
-	footer i {
-		font-size: 35px;
-	}
-
-	.p-box #bunder1 {
-		position: absolute;
-		top: 80px;
-		left: 30px;
-		width: 100px;
-		height: 100px;
-	}
-
-	.p-box #bunder2 {
-		position: absolute;
-		bottom: 30px;
-		left: 190px;
-		width: 330px;
-		height: 330px;
-	}
-
-	.p-box #bunder3 {
-		position: absolute;
-		bottom: 30px;
-		top: 20px;
-		left: 380px;
-		width: 60px;
-		height: 60px;
-	}
-
-	.p-box #bunder4 {
-		position: absolute;
-		bottom: 30px;
-		top: 350px;
-		left: 100px;
-		width: 50px;
-		height: 50px;
-	}
-}
-
-/* *===== Media Mobile =======*/
-@media screen and (max-width: 426px) {
-	
-
-	nav {
-		margin: 0;
-	}
-
-	#main-car {
-		width: 95%;
-		height: 85%;
-		top: 0px;
-	}
-
-	#latar-mobil {
-		width: 410px;
-		height: 70px;
-		border-radius: 20px 20px 0 0;
-		left: auto;
-		top: 100px;
-	}
-
-	.mob-lat {
-		display: flex;
-		justify-content: center;
-	}
-
-	
-
-	.carousel-inner .container {
-		border-radius: 70px;
-		width: 100%;
-		height: 320px;
-		position: relative;
-	}
-
-	.carousel-inner img {
-		left: 130px;
-		top: 10px;
-	}
-
-	#getting {
-		margin: 0 20px;
-		margin-top: 50px;
-	}
-
-	.p-box #bunder1 {
-		position: absolute;
-		top: 60px;
-		left: 30px;
-		width: 70px;
-		height: 70px;
-	}
-
-	.p-box #bunder2 {
-		position: absolute;
-		bottom: 20px;
-		left: 109px;
-		width: 170px;
-		height: 170px;
-	}
-
-	.p-box #bunder3 {
-		position: absolute;
-		bottom: 30px;
-		top: 10px;
-		left: 280px;
-		width: 40px;
-		height: 40px;
-	}
-
-	.p-box #bunder4 {
-		position: absolute;
-		bottom: 30px;
-		top: 245px;
-		left: 95px;
-		width: 20px;
-		height: 25px;
 	}
 }
