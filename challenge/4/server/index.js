@@ -1,13 +1,9 @@
 const fs = require('fs');
 const path = require('path');
 const express = require('express');
-// const { dirname } = require('path');
 const app = express();
 const port = 3002;
-// const aset_path = __dirname + '../public/';
 
-// const cars = fs.readFileSync('../data/cars.json', 'utf-8');
-// console.log(cars);
 
 const readCars = fs.readFile('../data/cars.json', (e, jsonStr) => {
 	if (e) {
@@ -21,40 +17,22 @@ const readCars = fs.readFile('../data/cars.json', (e, jsonStr) => {
 });
 
 
-// TODO
-// function jsonReader(filepath, cb) {
-// 	fs.readFile(filepath, 'utf-8', (err, fileData) => {
-// 		if (err) {
-// 			return cb && cb(err);
-// 		}
-// 		try {
-// 			const data = JSON.parse(jsonStr);
-// 			return cb && cb(null, object);
-// 		} catch (err) {
-// 			return cb && cb(err);
-// 		}
-// 	});
-// }
-// const readCar = fs.readFileSync('../data/cars.json')
+
 
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
-	// res.sendFile(path.join(aset_path + 'index.html'));
-	res.sendFile(path.join(__dirname,'..','public','index.html'))
+	res.sendFile(path.join(__dirname,'..','public','index.html')) // % Express 
+	
 });
 
-app.get('/cari-mobil', (req, res) => {
-	// console.log(path.join(aset_path + 'cari.html'));
-	res.sendFile(path.join(__dirname,'..','public','cari.html'))
-
-	// res.send('ini cari')
+app.get('/cari', (req, res) => {
+	res.sendFile(path.join(__dirname,'..','public','cari.html')) // % Express 
+	
 });
 
 app.get('/cars', (req, res) => {
-	res.json({
-		nama : 'rafi'
-	})
+	res.sendFile(path.join(__dirname, '..','data','cars.json'))
 });
 
 // % Ketika page salah

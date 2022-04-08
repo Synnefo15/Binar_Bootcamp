@@ -1,14 +1,6 @@
 let a;
 
-// function show_hide() {
-// 	if (a == 1) {
-// 		document.getElementById('search-main').style.display = 'none';
-// 		return (a = 0);
-// 	} else {
-// 		document.getElementById('search-main').style.display = 'block';
-// 		return (a = 1);
-// 	}
-// }
+
 
 function cariMobil() {
 	if (a == 1) {
@@ -19,6 +11,19 @@ function cariMobil() {
 		return (a = 1);
 	}
 }
+
+// &---- Fungsi seleksi ----
+function getSelectSupir() {
+	const selected = document.getElementById('opsi-supir').value;
+	console.log(selected);
+}
+getSelectSupir();
+
+function getSelectTanggal() {
+	const selected = document.getElementById('tanggal').value;
+	console.log(selected);
+}
+getSelectTanggal();
 
 
 

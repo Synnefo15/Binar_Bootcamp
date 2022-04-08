@@ -19,7 +19,7 @@
 		<!-- * Font Awesome -->
 		<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.0.0/css/all.css" />
 	</head>
-	<body>
+	<body >
 		<!-- *Navbar -->
 		<nav class="navbar navbar-expand-lg navbar-light py-3 sticky-top">
 			<div class="container">
@@ -128,22 +128,22 @@
 					<div class="col-lg-9 d-flex justify-content-between align-items-center p-lg-3 cari">
 						<div class="col-lg-2">
 							<label for="">Tipe Driver</label>
-							<select class="form-select form-select-sm" aria-label="Default select example">
-								<option selected>Pilih Supir</option>
-								<option value="1">Dengan Supir</option>
-								<option value="2">Tanpa supir</option>
+							<select onchange="getSelectSupir()" class="form-select form-select-sm" id="opsi-supir" aria-label="Default select example">
+								<option value="default" selected>Pilih Supir</option>
+								<option value="supir">Dengan Supir</option>
+								<option value="no_supir">Tanpa supir</option>
 							</select>
 						</div>
 						<div class="col-lg-2">
 							<label for="tanggal">Tanggal Sewa</label>
-							<input type="date" id="tanggal" name="tanggal" />
+							<input onchange="getSelectTanggal()" type="date" id="tanggal" name="tanggal" />
 						</div>
 						<div class="col-lg-2">
 							<label for="">Pilih Waktu</label>
-							<select class="form-select form-select-sm" aria-label="Default select example">
+							<select  id="waktu" class="form-select form-select-sm" aria-label="Default select example">
 								<option selected>Pilih Waktu</option>
 								<option value="1">09.00</option>
-								<option value="2">10.00</option>
+								
 							</select>
 						</div>
 						<div class="col-lg-2">
