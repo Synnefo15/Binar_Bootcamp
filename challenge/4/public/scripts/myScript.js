@@ -1,7 +1,17 @@
+document.addEventListener('DOMContentLoaded', function () {
+	fetch('http://localhost:3002/cars')
+		.then((response) => response.json())
+		.then((data) => {
+			const dataRaw = data;
+
+			dataRaw.forEach((element) => {
+				console.log(element);
+			});
+		});
+});
+
+// &---- Cari Mobil ----
 let a;
-
-
-
 function cariMobil() {
 	if (a == 1) {
 		document.getElementById('hasil-section').style.display = 'none';
@@ -26,7 +36,7 @@ function getSelectTanggal() {
 getSelectTanggal();
 
 
-
+// &---- Class OOP ----
 class Component {
 	constructor() {
 		if (this.constructor === Component) {
