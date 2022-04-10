@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
+const ambilData = document.addEventListener('DOMContentLoaded', function () {
 	fetch('http://localhost:3002/json')
 		.then((response) => response.json())
 		.then((data) => {
@@ -6,13 +6,59 @@ document.addEventListener('DOMContentLoaded', function () {
 
 			dataRaw.forEach((element) => {
 				console.log(element);
+				document.getElementById('kartu').innerHTML = `${dataRaw.map(carTemplate).join('')}`;
 			});
 		});
 });
 
-// &---- Cari Mobil ----
+function carTemplate(cars) {
+	return /*html*/ `<div class="col" >
+						<div class="card h-100 card-effect">
+							<img src="${cars.image}" class="card-img-top" alt="..." />
+							<div class="card-body">
+								<p class="card-title">${cars.model}</p>
+								<p>${cars.rentPerDay}</p>
+								<p class="card-text">
+									${cars.description}
+								</p>
+								<p><i class="fa-solid fa-users"></i>${cars.capacity}</p>
+								<p><i class="fa-solid fa-gear"></i>${cars.transmission}</p>
+								<p><i class="fa-solid fa-calendar"></i>${cars.year}</p>
+							</div>
+							<div class="card-footer d-flex justify-content-center">
+								<button class="btn-success">Pilih Mobild</button>
+							</div>
+						</div>
+					</div>`;
+}
+
+
+// &---- Fungsi seleksi ----
+function getSelectSupir() {
+	const selected = document.getElementById('opsi-supir').value;
+	console.log(selected);
+}
+// getSelectSupir();
+
+function getSelectTanggal() {
+	const selected = document.getElementById('tanggal').value;
+	console.log(selected);
+}
+// getSelectTanggal();
+
+function getSelectWaktu() {
+	const selected = document.getElementById('waktu').value;
+	console.log(selected);
+}
+// getSelectWaktu();
+function getSelectPenumpang() {
+	const selected = document.getElementById('penumpang').value;
+	console.log(selected);
+}
+// getSelectPenumpang();
+
 let a;
-function cariMobil() {
+function showAllMobil() {
 	if (a == 1) {
 		document.getElementById('hasil-section').style.display = 'none';
 		return (a = 0);
@@ -21,20 +67,6 @@ function cariMobil() {
 		return (a = 1);
 	}
 }
-
-// &---- Fungsi seleksi ----
-function getSelectSupir() {
-	const selected = document.getElementById('opsi-supir').value;
-	console.log(selected);
-}
-getSelectSupir();
-
-function getSelectTanggal() {
-	const selected = document.getElementById('tanggal').value;
-	console.log(selected);
-}
-getSelectTanggal();
-
 
 // &---- Class OOP ----
 class Component {
