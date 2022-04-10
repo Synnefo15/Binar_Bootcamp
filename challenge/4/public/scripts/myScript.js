@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-	fetch('http://localhost:3002/cars')
+	fetch('http://localhost:3002/json')
 		.then((response) => response.json())
 		.then((data) => {
 			const dataRaw = data;

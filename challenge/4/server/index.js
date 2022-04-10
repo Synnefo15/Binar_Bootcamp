@@ -25,6 +25,14 @@ app.get('/cars', (req, res) => {
 	res.sendFile(path.join(__dirname, '..','data','cars.json'))
 });
 
+app.get('/json', (req, res) => {
+	const rawData = fs.readFileSync(path.join(__dirname, '..', 'data', 'cars.json'));
+	const parsedJSON = JSON.parse(rawData);
+
+	res.send(parsedJSON);
+});
+
+
 // % Ketika page salah
 app.use('/', (req, res) => {
 	res.status(404);
