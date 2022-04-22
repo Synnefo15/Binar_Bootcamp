@@ -1,0 +1,51 @@
+<section>
+    <div class="container mt-3">
+        <div class="row ">
+            <div class="col-lg-12 d-flex justify-content-between">
+                <h3 class="mb-2">List Car</h3>
+                <button type="button" class="btn btn-primary">
+                    <a href="/cars/add" class="text-decoration-none text-white"><i class="fa-solid fa-plus"></i> Add
+                        Cars</a>
+                </button>
+
+            </div>
+        </div>
+        <div class="mt-4 col-lg-4 ">
+            <button type="button" class="btn btn-primary" onclick="showAllMobil()">All</button>
+            <button type="button" class="btn btn-primary">Small</button>
+            <button type="button" class="btn btn-primary">Medium</button>
+            <button type="button" class="btn btn-primary">Large</button>
+        </div>
+    </div>
+    <div class="container mt-4">
+        <div id="kartu" class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+            <% data.forEach(result => { %>
+            <div class="col">
+                <div class="card h-100 card-effect">
+                    <img src="<%= result.foto %> " class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <p class="card-title"><%= result.nama %> </p>
+                        <p class="fw-bold">Rp <%= result.sewa %>/Hari </p>
+                        <p class="card-text text-muted">created at <%= result.createdAt %> </p>
+                        <p class="card-text text-muted">updated at <%= result.updatedAt %> </p>
+                        <p><i class="fa-solid fa-users"></i> <%= result.ukuran %> </p>
+
+                    </div>
+                    <div class="card-footer d-flex justify-content-around">
+                        <button class="btn btn-danger">
+                            <a class="text-white text-decoration-none" onclick="alert('Yakin menghapus data ini?')"
+                                href="/cars/<%= result.id %>">Delete</a>
+                        </button>
+                        <button class=" btn btn-success"><a class="text-white"
+                                href="/cars/update/<%= result.id %>">Edit</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <% }) %>
+        </div>
+
+    </div>
+    </div>
+
+</section>

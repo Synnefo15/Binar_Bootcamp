@@ -30,7 +30,7 @@
 
 <!-- Offcanvas -->
 <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebar-label">
-	<div class="offcanvas-header">
+	<div class="offcanvas-header bg-primary">
 		<h5 class="offcanvas-title" id="sidebar-label"><i class="fas fa-car"></i> Binar Car</h5>
 		<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 	</div>
@@ -39,18 +39,19 @@
 			<li class="nav-item">
 				<a class="nav-link" href="http://localhost:3010/"><i class="fad fa-home"></i> Dashboard </a>
 			</li>
-			<li class="nav-item d-inline-flex mt-3">
+			<li class="nav-item d-inline-flex mt-3 align-items-center">
 				<!-- *DROPDOWN -->
 				<a class="nav-link" href="#cars"><i class="far fa-cars"></i> Cars</a>
 				<div class="dropdown dropend ms-3">
 					<button
-						class="btn btn-secondary dropdown-toggle"
+						class="btn btn-secondary dropdown-toggle ms-4"
 						type="button"
-						id="book-dropdown"
+						id="car-dropdown"
 						data-bs-toggle="dropdown"
 					></button>
-					<ul class="dropdown-menu" aria-labelledby="book-dropdown">
-						<li><a href="http://localhost:3010/cars-add" class="dropdown-item">List Car</a></li>
+					<ul class="dropdown-menu ms-3" aria-labelledby="car-dropdown">
+						<li><a href="http://localhost:3010/cars" class="dropdown-item ">List Car</a></li>
+						<li><a href="http://localhost:3010/cars/add" class="dropdown-item ">Add Car</a></li>
 					</ul>
 				</div>
 			</li>

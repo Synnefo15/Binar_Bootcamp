@@ -4,9 +4,8 @@ const app = express();
 const PORT = 3010;
 
 // #====== Dari mas reza =======
-const articlesController = require('./controller/articles.controller.js');
+// const articlesController = require('./controller/articles.controller.js');
 const carsController = require('./controller/cars.controller.js');
-
 
 // #====== EJS =======
 app.set('view engine', 'ejs');
@@ -18,42 +17,49 @@ app.use(expressLayouts);
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
 
-// #====== mas reja =======
-// Controller articles
-// app.get('/articles', articlesController.findAllArticles);
-// app.get('/articles/:id', articlesController.findArticleById);
-// app.post('/articles', articlesController.createArticle);
-// app.put('/articles/:id', articlesController.updateArticles);
-// app.delete('/articles/:id', articlesController.deleteArticles);
 
-// Controller cars
+// &---- Default page ----
+app.get('/', (req, res) => {
+	res.render('index', {
+		title: 'Home Page',
+		layout: 'layouts/main-layout',
+	});
+});
+
+// &---- Controller cars ---- 
+// Render view
 app.get('/cars', carsController.getAllCars);
+app.get('/cars/add', carsController.renderCreateCarForm);
+app.get('/cars/update/:id', carsController.renderUpdateCarForm);
+
+// Endpoint logic
 app.post('/cars', carsController.createNewCar);
-app.put('/cars/:id', carsController.updateCar);
-app.delete('/cars/:id', carsController.deleteCar);
+app.post('/cars/:id', carsController.updateCar);
+app.get('/cars/:id', carsController.deleteCar);
 // #====== xxxxxxx =======
 
-app.get('/', (req, res) => {
-	const mahasiswa = [
-		{
-			nama: 'rafi',
-			email: 'rafi@gmail.com',
-		},
-	];
-	res.render('index', {
-		nama: 'rafi putra',
-		mahasiswa: mahasiswa,
-		title: 'Home | Page',
-		layout: 'layouts/main-layout',
-	});
-});
+// #====== Sementara non aktivkan =======
+// app.get('/', (req, res) => {
+// 	const mahasiswa = [
+// 		{
+// 			nama: 'rafi',
+// 			email: 'rafi@gmail.com',
+// 		},
+// 	];
+// 	res.render('index', {
+// 		nama: 'rafi putra',
+// 		mahasiswa: mahasiswa,
+// 		title: 'Home | Page',
+// 		layout: 'layouts/main-layout',
+// 	});
+// });
 
-app.get('/cars-add', (req, res) => {
-	res.render('cars_add', {
-		title: 'Add Cars | Page',
-		layout: 'layouts/main-layout',
-	});
-});
+// app.get('/cars-add', (req, res) => {
+// 	res.render('cars_add', {
+// 		title: 'Add Cars | Page',
+// 		layout: 'layouts/main-layout',
+// 	});
+// });
 
 // &---- Page salah ----
 app.use('/', (req, res) => {
