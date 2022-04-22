@@ -1,0 +1,9 @@
+.nav-item a {
+	text-decoration: none;
+	font-weight: 700;
+	color: black;
+}
+
+.body {
+	background-color: whitesmoke;
+}

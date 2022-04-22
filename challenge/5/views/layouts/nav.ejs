@@ -1,0 +1,59 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<div class="container-fluid">
+		<a
+			class="navbar-brand"
+			href="#sidebar"
+			data-bs-toggle="offcanvas"
+			role="button"
+			aria-controls="sidebar"
+			><i class="fas fa-bars"></i> Binar Car</a
+		>
+		<button
+			class="navbar-toggler"
+			type="button"
+			data-bs-toggle="collapse"
+			data-bs-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent"
+			aria-expanded="false"
+			aria-label="Toggle navigation"
+		>
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+			<form class="d-flex">
+				<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+				<button class="btn btn-outline-success" type="submit">Search</button>
+			</form>
+		</div>
+	</div>
+</nav>
+
+<!-- Offcanvas -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebar-label">
+	<div class="offcanvas-header">
+		<h5 class="offcanvas-title" id="sidebar-label"><i class="fas fa-car"></i> Binar Car</h5>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+	</div>
+	<div class="offcanvas-body">
+		<ul class="navbar-nav ms-lg-auto">
+			<li class="nav-item">
+				<a class="nav-link" href="http://localhost:3010/"><i class="fad fa-home"></i> Dashboard </a>
+			</li>
+			<li class="nav-item d-inline-flex mt-3">
+				<!-- *DROPDOWN -->
+				<a class="nav-link" href="#cars"><i class="far fa-cars"></i> Cars</a>
+				<div class="dropdown dropend ms-3">
+					<button
+						class="btn btn-secondary dropdown-toggle"
+						type="button"
+						id="book-dropdown"
+						data-bs-toggle="dropdown"
+					></button>
+					<ul class="dropdown-menu" aria-labelledby="book-dropdown">
+						<li><a href="http://localhost:3010/cars-add" class="dropdown-item">List Car</a></li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
