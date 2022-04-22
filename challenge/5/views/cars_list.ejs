@@ -11,7 +11,7 @@
             </div>
         </div>
         <div class="mt-4 col-lg-4 ">
-            <button type="button" class="btn btn-primary" onclick="showAllMobil()">All</button>
+            <button type="button" class="btn btn-primary" >All</button>
             <button type="button" class="btn btn-primary">Small</button>
             <button type="button" class="btn btn-primary">Medium</button>
             <button type="button" class="btn btn-primary">Large</button>
@@ -22,7 +22,7 @@
             <% data.forEach(result => { %>
             <div class="col">
                 <div class="card h-100 card-effect">
-                    <img src="<%= result.foto %> " class="card-img-top" alt="..." />
+                    <img src="<%= result.foto %> " class="card-img-top" alt="gambar id-<%= result.id %> " />
                     <div class="card-body">
                         <p class="card-title"><%= result.nama %> </p>
                         <p class="fw-bold">Rp <%= result.sewa %>/Hari </p>
@@ -32,13 +32,41 @@
 
                     </div>
                     <div class="card-footer d-flex justify-content-around">
-                        <button class="btn btn-danger">
-                            <a class="text-white text-decoration-none" onclick="alert('Yakin menghapus data ini?')"
-                                href="/cars/<%= result.id %>">Delete</a>
+                        <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+
+                            <i class="fa-solid fa-circle-trash"></i> Delete
                         </button>
-                        <button class=" btn btn-success"><a class="text-white"
-                                href="/cars/update/<%= result.id %>">Edit</a>
+
+                        
+                        <button class=" btn btn-success"><a class="text-white" href="/cars/update/<%= result.id %>"><i
+                                    class="fa-solid fa-pen-to-square"></i> Edit</a>
                         </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header bg-danger text-center ">
+                            <h5 class="modal-title " id="exampleModalLabel">Hapus Data Mobil</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="./img/mobil.PNG" alt="" srcset="">
+                            <p>Mobil : <%= result.nama %> </p>
+                            <p>ID : <%= result.id %> </p>
+                            <h5>Setelah dihapus, data mobil tidak dapat dikembalikan, Anda yakin ??</h5>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-danger">
+                                <a class="text-white text-decoration-none" href="/cars/<%= result.id %>"><i
+                                        class="fa-solid fa-circle-trash"></i> Delete
+                                </a>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -47,5 +75,7 @@
 
     </div>
     </div>
+
+
 
 </section>

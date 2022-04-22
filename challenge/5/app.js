@@ -38,28 +38,7 @@ app.post('/cars/:id', carsController.updateCar);
 app.get('/cars/:id', carsController.deleteCar);
 // #====== xxxxxxx =======
 
-// #====== Sementara non aktivkan =======
-// app.get('/', (req, res) => {
-// 	const mahasiswa = [
-// 		{
-// 			nama: 'rafi',
-// 			email: 'rafi@gmail.com',
-// 		},
-// 	];
-// 	res.render('index', {
-// 		nama: 'rafi putra',
-// 		mahasiswa: mahasiswa,
-// 		title: 'Home | Page',
-// 		layout: 'layouts/main-layout',
-// 	});
-// });
 
-// app.get('/cars-add', (req, res) => {
-// 	res.render('cars_add', {
-// 		title: 'Add Cars | Page',
-// 		layout: 'layouts/main-layout',
-// 	});
-// });
 
 // &---- Page salah ----
 app.use('/', (req, res) => {
