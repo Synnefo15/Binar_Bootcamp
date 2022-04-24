@@ -10,7 +10,7 @@
           6.pg pg-hstore
 
 ## ERD 
-     ![logo](https://gitlab.com/gilang20bekek/rafi-putra-fws-11/-/raw/main/challenge/5/public/img/erd.jpg)
+![logo](https://gitlab.com/gilang20bekek/rafi-putra-fws-11/-/raw/main/challenge/5/public/img/erd.jpg)
 
 
 ### NOTE :

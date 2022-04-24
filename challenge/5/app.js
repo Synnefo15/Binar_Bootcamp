@@ -1,5 +1,6 @@
 const express = require('express');
 const expressLayouts = require('express-ejs-layouts');
+// const formidable = require('express-formidable');
 const app = express();
 const PORT = 3010;
 
@@ -10,12 +11,21 @@ const carsController = require('./controller/cars.controller.js');
 // #====== EJS =======
 app.set('view engine', 'ejs');
 
+app.use(express.json());
+
+// app.use(
+// 	formidable({
+// 		uploadDir: 'uploads',
+// 	})
+// );
+
 // #====== Express EJS =======
 app.use(expressLayouts);
 
 // #====== Middleware =======
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
+
 
 
 // &---- Default page ----
