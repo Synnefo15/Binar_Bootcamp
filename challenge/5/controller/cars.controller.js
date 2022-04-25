@@ -3,6 +3,7 @@ const Car = db.car;
 const multer = require('multer');
 const upload = multer({ dest: '../public/upload' });
 
+
 exports.getAllCars = (req, res) => {
 	Car.findAll().then((result) => {
 		res.render('cars_list', {
@@ -25,6 +26,7 @@ exports.createNewCar = (req, res) => {
 		nama: req.body.nama,
 		sewa: req.body.sewa,
 		ukuran: req.body.ukuran,
+		foto : req.body.foto,
 	};
 
 	Car.create(body);
@@ -38,6 +40,8 @@ exports.renderUpdateCarForm = (req, res) => {
 			id: result.id,
 			nama: result.nama,
 			sewa: result.sewa,
+			ukuran : result.ukuran,
+			foto:result.foto,
 			title: 'Car Update Page',
 			layout: 'layouts/main-layout',
 		});
@@ -49,6 +53,7 @@ exports.updateCar = (req, res) => {
 		nama: req.body.nama,
 		sewa: req.body.sewa,
 		ukuran: req.body.ukuran,
+		foto : req.body.foto,
 	};
 
 	Car.update(updateBody, { where: { id: req.params.id } });

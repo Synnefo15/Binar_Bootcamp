@@ -13,6 +13,7 @@ __metadata:
     express: ^4.17.3
     express-ejs-layouts: ^2.5.1
     express-formidable: ^1.2.0
+    formidable: 1.2.1
     multer: ^1.4.4
     pg: ^8.7.3
     pg-hstore: ^2.3.4
@@ -584,6 +585,13 @@ __metadata:
     statuses: ~1.5.0
     unpipe: ~1.0.0
   checksum: 617880460c5138dd7ccfd555cb5dde4d8f170f4b31b8bd51e4b646bb2946c30f7db716428a1f2882d730d2b72afb47d1f67cc487b874cb15426f95753a88965e
+  languageName: node
+  linkType: hard
+
+"formidable@npm:1.2.1":
+  version: 1.2.1
+  resolution: "formidable@npm:1.2.1"
+  checksum: f0027cc1dfc6d93e92e9da187866af9ac3ee53f09a3e620bbb24e52d56eb8a2336d4dcb0c9074835c13116eba335932614b5f5298d6d8b273820b2edf35af383
   languageName: node
   linkType: hard
 
