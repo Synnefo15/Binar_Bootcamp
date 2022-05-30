@@ -17,7 +17,7 @@ const Banner = () => {
 								harga terjangkau. Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.
 							</p>
 							<button className="btn fw-bold bg-success text-white" onclick="toCars()">
-								Mulai Sewa Mobil
+								<a href="http://localhost:5002/rent" style={{ 'textDecoration':"none" , "color":"white"}}>Mulai Sewa Mobil</a>
 							</button>
 						</div>
 					</div>

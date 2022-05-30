@@ -5,7 +5,7 @@ const Navbar = () => {
 			<div className="container">
 				<nav className="navbar navbar-expand-lg navbar-light">
 					<div className="container-fluid">
-						<a className="navbar-brand" href="">
+						<a className="navbar-brand" href="http://localhost:5002/">
 							Binar Car Rental
 						</a>
 						{/* <!-- <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,7 +43,10 @@ const Navbar = () => {
 									</a>
 								</li>
 								<li className="nav-item">
-									<a className="nav-link btn bg-lime-green400 text-white fw-bold px-3 bg-success" href="#">
+									<a
+										className="nav-link btn bg-lime-green400 text-white fw-bold px-3 bg-success"
+										href="#"
+									>
 										Register
 									</a>
 								</li>
