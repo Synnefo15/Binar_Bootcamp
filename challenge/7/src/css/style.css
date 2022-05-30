@@ -1,0 +1,323 @@
+:root {
+    --dark-blue500: #091B6F;
+    --dark-blue400: #0D28A6;
+    --dark-blue300: #5E70C4;
+    --dark-blue200: #AEB7E1;
+    --dark-blue100: #CFD4ED;
+    --lime-green100: #DEF1DF;
+    --lime-green200:#C9E7CA;
+    --lime-green300: #92D094;
+    --lime-green400: #5CB85F;
+    --lime-green500: #3D7B3F;
+    --bg-main: #F1F3FF;
+    --bg-secondary: #0D28A6;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+
+header {
+    transition: .2s;
+}
+
+.bg-transparent {
+    background: transparent;
+}
+
+.bg-dark-blue100 {
+    background: var(--dark-blue100);
+}
+
+.bg-dark-blue200 {
+    background: var(--dark-blue200);
+}
+
+.bg-dark-blue300 {
+    background: var(--dark-blue300);
+}
+
+.bg-dark-blue400 {
+    background: var(--dark-blue400);
+}
+
+.bg-dark-blue500 {
+    background: var(--dark-blue500);
+}
+
+.bg-lime-green100 {
+    background: var(--lime-green100);
+}
+
+.bg-lime-green200 {
+    background: var(--lime-green200);
+}
+
+.bg-lime-green300 {
+    background: var(--lime-green300);
+}
+
+.bg-lime-green400 {
+    background: var(--lime-green400);
+}
+
+.bg-lime-green500 {
+    background: var(--lime-green500);
+}
+
+.bg-main {
+    background: var(--bg-main);
+}
+
+.w-half {
+    width: 50%;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.h-half {
+    height: 50%;
+}
+
+.h-full {
+    height: 100%;
+}
+
+.vh-10 {
+    height: 100vh;
+}
+
+.py-5 {
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.nav-link:not(.btn) {
+    color: black !important;
+}
+
+.navbar-toggler {
+    border: none;
+    outline: none;
+}
+
+#car-container {
+    max-width: 704px;
+    min-width: 320px;
+    width: 100%;
+    height: 50%;
+    max-height: 243px;
+    min-height: 118.81px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    position: relative;
+}
+
+#car-container:after {
+    content: '';
+    position: absolute;
+    left: 99%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--dark-blue400);
+}
+
+#car-image {
+    width: 100%;
+    position: absolute;
+    right: 0%;
+    bottom: 35%;
+    object-fit: contain;
+}
+
+.rounded-top-left-10 {
+    border-top-left-radius: 10em;
+}
+
+.rounded-full {
+    border-radius: 50%;
+}
+
+.hero-paragraph {
+    line-height: 20px;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.hero-title {
+    font-size: 36px; 
+    line-height: 54px;
+}
+
+#image-container {
+    min-width: 191.8px;
+    min-height: 191.78px;
+    width: 360px;
+    height: 360px;
+    overflow: hidden;
+}
+
+#girl-front {
+    height: 366px;
+    width: 360px;
+    transform: translate(-50%, -50%);
+}
+
+#girl-back {
+    height: 100%;
+}
+
+.circle {
+    clip-path: circle();
+    position: absolute;
+    z-index: -1;
+}
+
+.circle-1 {
+    background-color: var(--lime-green300);
+    width: 50%;
+    height: 50%;
+    max-width: 133px;
+    max-height: 133px;
+    top: -10%;
+    left: -5%;
+}
+
+.circle-2 {
+    background-color: #FA2C5A;
+    width: 10%;
+    height: 10%;
+    max-width: 25px;
+    max-height: 25px;
+    top: 5%;
+    right: 10%;
+}
+
+.circle-3 {
+    background-color: #F9CC00;
+    width: 32%;
+    height: 32%;
+    max-width: 48px;
+    max-height: 48px;
+    bottom: 10%;
+    left: 25%;
+}
+
+.list-style-check {
+    padding: 0;
+}
+
+.list-style-check li{
+    position: relative;
+    list-style: none;
+}
+
+.list-style-check li img {
+    /* display: inline-block; */
+    background-color: var(--dark-blue100);
+    border-radius: 50%;
+    padding: .2em;
+    margin-right: .5em;
+}
+
+.scroll-header {
+    background-color: white !important;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+}
+
+.carousel-control {
+    background-color: var(--lime-green400);
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    padding: .3em;
+    position: static;
+    opacity: 1;
+}
+
+.carousel-item .card {
+    min-height: 360px;
+    border: none;
+}
+
+.icon {
+    background: var(--dark-blue400);
+    padding: .5em;
+}
+
+#whyus .card {
+    height: 100%;
+}
+
+.offcanvas {
+    width: 50%;
+}
+
+@media (max-width:992px) {
+
+    #car-container {
+        border-top-left-radius: 8em;
+    }
+
+    #car-image {
+        bottom: 0;
+        width: 100%;
+        height: calc(100% + 100px);
+    }
+
+    .w-lg-full {
+        width: auto;
+    }
+
+    #image-container {
+        width: 191.8px;
+        height: 191.78px;
+    }
+
+    #girl-front {
+        max-width: 374px; 
+        top: 33% !important;
+        left: 50% !important;
+        width: 191.8px;
+        height: 191.78px;
+    }
+
+}
+
+@media (max-width: 992px) AND (min-height:992px) {
+    :root {
+        font-size: 32px;
+    }
+
+    #girl-front {
+        width: 100%;
+        height: 100%;
+    }
+
+    .hero-title {
+        font-size: 2rem;    
+        line-height: 150%;
+    }
+
+    .hero-paragraph {
+        font-size: 1rem;
+        line-height: 150%;
+    }
+
+    #image-container {
+        width: 360px;
+        height: 360px;
+    }
+}
+
+@media (max-width:425px) AND (max-height:524px) {
+    .hero-title {
+        font-size: 24px;
+        line-height: 30px;
+    }
+}
